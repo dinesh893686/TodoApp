@@ -2,30 +2,44 @@
 
 <head>
     <title>
-        <%=title%> 
-</title>
+        <%=title%>
+    </title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 
-        <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
 
 </head>
 
 <body>
-    <div class="heading_center" >
+    <div class="heading_center">
 
-    <h1 >
-        <i class="fas fa-list-alt"></i>  TODO App</h1>
+        <h1>
+            <i class="fas fa-list-alt"></i> TODO App
+        </h1>
 
-</div>
+    </div>
 
-    <form action="">
+    <div class="container">
 
+        <form method="POST" action="/submit-form">
+            <label for="description">DESCRIPTION</label>
+            <input type="text" name="description" placeholder="What do you need to do?" id="description"><br>
 
+            <label for="category">CATEGORY</label>
 
-    </form>
+            <select name="category" id="category" placeholder="Choose a category">
+                <option value="personal">Personal</option>
+                <option value="work">Work</option>
+                <option value="school">School</option>
+                <option value="cleaning">Cleaning</option>
+                <option value="other">Other</option>
+            </select>
 
+        </form>
+
+    </div>
 
 
 
