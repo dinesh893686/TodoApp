@@ -1,3 +1,8 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
 .heading_center
 {
     /* align-items: center; */
@@ -7,3 +12,43 @@
       text-align:center;
 
 }
+.container
+{
+  border: 2px solid blue ;
+  height: 200px;
+}
+.description-box
+{
+  border: 2px solid green;
+  margin-bottom: 3px;
+  height: 50px;
+}
+#description
+{
+  width: 100vw;
+  border: none;
+ 
+
+
+}
+/* .category-date */
+.category-date
+{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  border: 2px solid brown;
+
+}
+.category-box
+{
+  border: 2px solid pink;
+  height: 50px;
+  width: 350px;
+}
+#category
+{
+  width: 100%;
+
+}
+
