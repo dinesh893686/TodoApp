@@ -3,13 +3,14 @@ const app =express()
 const port=8000
 
 
-app.use('/',require('./Routes'))
+
 
 // setting our view engine ejs
 app.set('view engine','ejs')
-app.set('path','./views')
+app.set('path','views')
 app.use(express.static('./assets'));
-
+// adding router 
+app.use('/',require('./Routes'))
 
 app.listen(port,function(err)
 {
