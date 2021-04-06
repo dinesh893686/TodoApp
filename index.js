@@ -21,7 +21,7 @@ app.use(express.static('assets'));
 // adding router 
 app.use('/',require('./Routes'))
 
-app.post('/create-contact',function(req,res)
+app.post('/submit-form',function(req,res)
 {
     console.log(req.body);
 
@@ -51,6 +51,8 @@ app.post('/create-contact',function(req,res)
      )
 })
 
+// app.get('/')
+// app.get()
 
 app.listen(port,function(err)
 {
